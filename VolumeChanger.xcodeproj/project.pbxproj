@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7352EE8B18065AB00047B42A /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7352EE8A18065AB00047B42A /* GraphView.m */; };
 		B91579B21805187F0057A58A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91579B11805187F0057A58A /* Cocoa.framework */; };
 		B91579BC1805187F0057A58A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B91579BA1805187F0057A58A /* InfoPlist.strings */; };
 		B91579BE1805187F0057A58A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B91579BD1805187F0057A58A /* main.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7352EE8918065AB00047B42A /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		7352EE8A18065AB00047B42A /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 		B91579AE1805187F0057A58A /* VolumeChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91579B11805187F0057A58A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B91579B41805187F0057A58A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -126,6 +129,8 @@
 				B91579C41805187F0057A58A /* AppDelegate.m */,
 				B91579C61805187F0057A58A /* MainMenu.xib */,
 				B91579B81805187F0057A58A /* Supporting Files */,
+				7352EE8918065AB00047B42A /* GraphView.h */,
+				7352EE8A18065AB00047B42A /* GraphView.m */,
 			);
 			path = VolumeChanger;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				B91579BE1805187F0057A58A /* main.m in Sources */,
 				B91579C51805187F0057A58A /* AppDelegate.m in Sources */,
 				B91579E8180518CB0057A58A /* ANSystemSoundWrapper.m in Sources */,
+				7352EE8B18065AB00047B42A /* GraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +476,7 @@
 				B91579E11805187F0057A58A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B91579E21805187F0057A58A /* Build configuration list for PBXNativeTarget "VolumeChangerTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				B91579E41805187F0057A58A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

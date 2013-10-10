@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F7473AB0-7A06-4AA0-8571-65C5E8DF9944</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VolumeChanger</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>963DDBCB-DFB2-45E3-B339-DDBB980FFD20</key>
+		<string>ssh://github.com/jules2689/fadeToSleep.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VolumeChanger.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>963DDBCB-DFB2-45E3-B339-DDBB980FFD20</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jules2689/fadeToSleep.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>963DDBCB-DFB2-45E3-B339-DDBB980FFD20</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>963DDBCB-DFB2-45E3-B339-DDBB980FFD20</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fadeToSleep</string>
+		</dict>
+	</array>
+</dict>
+</plist>
