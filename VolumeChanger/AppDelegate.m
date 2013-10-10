@@ -55,7 +55,7 @@
     _expectedNextVolume = _currentVolume - _changeByVolume;
 	
 	//Timer goes off every minute
-    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:60.0f target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
 	
 	//Disable All Time Inputs, and set relevant UI info.
     [self disableTimeInput];
