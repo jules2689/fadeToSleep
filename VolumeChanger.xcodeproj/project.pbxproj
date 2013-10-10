@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B91579B21805187F0057A58A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91579B11805187F0057A58A /* Cocoa.framework */; };
+		B91579BC1805187F0057A58A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B91579BA1805187F0057A58A /* InfoPlist.strings */; };
+		B91579BE1805187F0057A58A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B91579BD1805187F0057A58A /* main.m */; };
+		B91579C21805187F0057A58A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B91579C01805187F0057A58A /* Credits.rtf */; };
+		B91579C51805187F0057A58A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B91579C41805187F0057A58A /* AppDelegate.m */; };
+		B91579C81805187F0057A58A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91579C61805187F0057A58A /* MainMenu.xib */; };
+		B91579D01805187F0057A58A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91579CF1805187F0057A58A /* SenTestingKit.framework */; };
+		B91579D11805187F0057A58A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91579B11805187F0057A58A /* Cocoa.framework */; };
+		B91579D91805187F0057A58A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B91579D71805187F0057A58A /* InfoPlist.strings */; };
+		B91579DC1805187F0057A58A /* VolumeChangerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B91579DB1805187F0057A58A /* VolumeChangerTests.m */; };
+		B91579E8180518CB0057A58A /* ANSystemSoundWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B91579E7180518CB0057A58A /* ANSystemSoundWrapper.m */; };
+		B91579EA18051F9B0057A58A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91579E918051F9B0057A58A /* CoreAudio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B91579D21805187F0057A58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B91579A61805187F0057A58A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B91579AD1805187F0057A58A;
+			remoteInfo = VolumeChanger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B91579AE1805187F0057A58A /* VolumeChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91579B11805187F0057A58A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B91579B41805187F0057A58A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B91579B51805187F0057A58A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B91579B61805187F0057A58A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B91579B91805187F0057A58A /* VolumeChanger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolumeChanger-Info.plist"; sourceTree = "<group>"; };
+		B91579BB1805187F0057A58A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B91579BD1805187F0057A58A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B91579BF1805187F0057A58A /* VolumeChanger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VolumeChanger-Prefix.pch"; sourceTree = "<group>"; };
+		B91579C11805187F0057A58A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B91579C31805187F0057A58A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B91579C41805187F0057A58A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B91579C71805187F0057A58A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B91579CE1805187F0057A58A /* VolumeChangerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeChangerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91579CF1805187F0057A58A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B91579D61805187F0057A58A /* VolumeChangerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolumeChangerTests-Info.plist"; sourceTree = "<group>"; };
+		B91579D81805187F0057A58A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B91579DA1805187F0057A58A /* VolumeChangerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolumeChangerTests.h; sourceTree = "<group>"; };
+		B91579DB1805187F0057A58A /* VolumeChangerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeChangerTests.m; sourceTree = "<group>"; };
+		B91579E6180518CB0057A58A /* ANSystemSoundWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSystemSoundWrapper.h; sourceTree = "<group>"; };
+		B91579E7180518CB0057A58A /* ANSystemSoundWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSystemSoundWrapper.m; sourceTree = "<group>"; };
+		B91579E918051F9B0057A58A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B91579AB1805187F0057A58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91579EA18051F9B0057A58A /* CoreAudio.framework in Frameworks */,
+				B91579B21805187F0057A58A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91579CA1805187F0057A58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91579D01805187F0057A58A /* SenTestingKit.framework in Frameworks */,
+				B91579D11805187F0057A58A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B91579A51805187F0057A58A = {
+			isa = PBXGroup;
+			children = (
+				B91579E918051F9B0057A58A /* CoreAudio.framework */,
+				B91579B71805187F0057A58A /* VolumeChanger */,
+				B91579D41805187F0057A58A /* VolumeChangerTests */,
+				B91579B01805187F0057A58A /* Frameworks */,
+				B91579AF1805187F0057A58A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B91579AF1805187F0057A58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B91579AE1805187F0057A58A /* VolumeChanger.app */,
+				B91579CE1805187F0057A58A /* VolumeChangerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B91579B01805187F0057A58A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B91579B11805187F0057A58A /* Cocoa.framework */,
+				B91579CF1805187F0057A58A /* SenTestingKit.framework */,
+				B91579B31805187F0057A58A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B91579B31805187F0057A58A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B91579B41805187F0057A58A /* AppKit.framework */,
+				B91579B51805187F0057A58A /* CoreData.framework */,
+				B91579B61805187F0057A58A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B91579B71805187F0057A58A /* VolumeChanger */ = {
+			isa = PBXGroup;
+			children = (
+				B91579E5180518CB0057A58A /* ANSystemSoundWrapper */,
+				B91579C31805187F0057A58A /* AppDelegate.h */,
+				B91579C41805187F0057A58A /* AppDelegate.m */,
+				B91579C61805187F0057A58A /* MainMenu.xib */,
+				B91579B81805187F0057A58A /* Supporting Files */,
+			);
+			path = VolumeChanger;
+			sourceTree = "<group>";
+		};
+		B91579B81805187F0057A58A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B91579B91805187F0057A58A /* VolumeChanger-Info.plist */,
+				B91579BA1805187F0057A58A /* InfoPlist.strings */,
+				B91579BD1805187F0057A58A /* main.m */,
+				B91579BF1805187F0057A58A /* VolumeChanger-Prefix.pch */,
+				B91579C01805187F0057A58A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B91579D41805187F0057A58A /* VolumeChangerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B91579DA1805187F0057A58A /* VolumeChangerTests.h */,
+				B91579DB1805187F0057A58A /* VolumeChangerTests.m */,
+				B91579D51805187F0057A58A /* Supporting Files */,
+			);
+			path = VolumeChangerTests;
+			sourceTree = "<group>";
+		};
+		B91579D51805187F0057A58A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B91579D61805187F0057A58A /* VolumeChangerTests-Info.plist */,
+				B91579D71805187F0057A58A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B91579E5180518CB0057A58A /* ANSystemSoundWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				B91579E6180518CB0057A58A /* ANSystemSoundWrapper.h */,
+				B91579E7180518CB0057A58A /* ANSystemSoundWrapper.m */,
+			);
+			path = ANSystemSoundWrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B91579AD1805187F0057A58A /* VolumeChanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91579DF1805187F0057A58A /* Build configuration list for PBXNativeTarget "VolumeChanger" */;
+			buildPhases = (
+				B91579AA1805187F0057A58A /* Sources */,
+				B91579AB1805187F0057A58A /* Frameworks */,
+				B91579AC1805187F0057A58A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolumeChanger;
+			productName = VolumeChanger;
+			productReference = B91579AE1805187F0057A58A /* VolumeChanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B91579CD1805187F0057A58A /* VolumeChangerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91579E21805187F0057A58A /* Build configuration list for PBXNativeTarget "VolumeChangerTests" */;
+			buildPhases = (
+				B91579C91805187F0057A58A /* Sources */,
+				B91579CA1805187F0057A58A /* Frameworks */,
+				B91579CB1805187F0057A58A /* Resources */,
+				B91579CC1805187F0057A58A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B91579D31805187F0057A58A /* PBXTargetDependency */,
+			);
+			name = VolumeChangerTests;
+			productName = VolumeChangerTests;
+			productReference = B91579CE1805187F0057A58A /* VolumeChangerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B91579A61805187F0057A58A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Julian Nadeau";
+			};
+			buildConfigurationList = B91579A91805187F0057A58A /* Build configuration list for PBXProject "VolumeChanger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B91579A51805187F0057A58A;
+			productRefGroup = B91579AF1805187F0057A58A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B91579AD1805187F0057A58A /* VolumeChanger */,
+				B91579CD1805187F0057A58A /* VolumeChangerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B91579AC1805187F0057A58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91579BC1805187F0057A58A /* InfoPlist.strings in Resources */,
+				B91579C21805187F0057A58A /* Credits.rtf in Resources */,
+				B91579C81805187F0057A58A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91579CB1805187F0057A58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91579D91805187F0057A58A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B91579CC1805187F0057A58A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B91579AA1805187F0057A58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91579BE1805187F0057A58A /* main.m in Sources */,
+				B91579C51805187F0057A58A /* AppDelegate.m in Sources */,
+				B91579E8180518CB0057A58A /* ANSystemSoundWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91579C91805187F0057A58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91579DC1805187F0057A58A /* VolumeChangerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B91579D31805187F0057A58A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B91579AD1805187F0057A58A /* VolumeChanger */;
+			targetProxy = B91579D21805187F0057A58A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B91579BA1805187F0057A58A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91579BB1805187F0057A58A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B91579C01805187F0057A58A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91579C11805187F0057A58A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B91579C61805187F0057A58A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91579C71805187F0057A58A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B91579D71805187F0057A58A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91579D81805187F0057A58A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B91579DD1805187F0057A58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B91579DE1805187F0057A58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B91579E01805187F0057A58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeChanger/VolumeChanger-Prefix.pch";
+				INFOPLIST_FILE = "VolumeChanger/VolumeChanger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B91579E11805187F0057A58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeChanger/VolumeChanger-Prefix.pch";
+				INFOPLIST_FILE = "VolumeChanger/VolumeChanger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B91579E31805187F0057A58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VolumeChanger.app/Contents/MacOS/VolumeChanger";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeChanger/VolumeChanger-Prefix.pch";
+				INFOPLIST_FILE = "VolumeChangerTests/VolumeChangerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B91579E41805187F0057A58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VolumeChanger.app/Contents/MacOS/VolumeChanger";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeChanger/VolumeChanger-Prefix.pch";
+				INFOPLIST_FILE = "VolumeChangerTests/VolumeChangerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B91579A91805187F0057A58A /* Build configuration list for PBXProject "VolumeChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91579DD1805187F0057A58A /* Debug */,
+				B91579DE1805187F0057A58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B91579DF1805187F0057A58A /* Build configuration list for PBXNativeTarget "VolumeChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91579E01805187F0057A58A /* Debug */,
+				B91579E11805187F0057A58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B91579E21805187F0057A58A /* Build configuration list for PBXNativeTarget "VolumeChangerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91579E31805187F0057A58A /* Debug */,
+				B91579E41805187F0057A58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B91579A61805187F0057A58A /* Project object */;
+}
