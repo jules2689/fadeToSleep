@@ -648,24 +648,24 @@
             </items>
         </menu>
         <window title="VolumeChanger" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="371">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" unifiedTitleAndToolbar="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="300"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-            <view key="contentView" id="372" customClass="GraphView">
+            <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="541">
-                        <rect key="frame" x="178" y="126" width="108" height="32"/>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="541">
+                        <rect key="frame" x="186" y="200" width="108" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Fall Asleep" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="542">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="546">
-                        <rect key="frame" x="184" y="162" width="96" height="22"/>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="546">
+                        <rect key="frame" x="185" y="237" width="96" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="547">
                             <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="0" maximumFractionDigits="3" id="548">
@@ -680,12 +680,12 @@
                         </textFieldCell>
                     </textField>
                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2mc-G2-Vh7">
-                        <rect key="frame" x="285" y="159" width="19" height="27"/>
+                        <rect key="frame" x="279" y="234" width="19" height="27"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="1000" doubleValue="1" id="x3F-jY-nMV"/>
                     </stepper>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-eJ-zq3">
-                        <rect key="frame" x="146" y="108" width="188" height="17"/>
+                        <rect key="frame" x="146" y="182" width="188" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Current Volume: 100%" id="1gs-zx-u2H">
                             <font key="font" metaFont="system"/>
@@ -693,23 +693,30 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPE-3q-uQK">
+                        <rect key="frame" x="146" y="157" width="188" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Time Left: 0 min" id="hSg-U1-jlT">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRa-kD-KK7" customClass="GraphView">
+                        <rect key="frame" x="159" y="48" width="163" height="96"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="541" firstAttribute="trailing" secondItem="546" secondAttribute="trailing" id="4f7-JP-vfq"/>
-                    <constraint firstItem="541" firstAttribute="top" secondItem="372" secondAttribute="top" constant="146" id="e6Y-Xp-ven"/>
-                    <constraint firstItem="541" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="184" id="fxp-YG-7rI"/>
-                    <constraint firstItem="541" firstAttribute="leading" secondItem="546" secondAttribute="leading" id="hQI-90-Kwm"/>
-                    <constraint firstItem="541" firstAttribute="top" secondItem="546" secondAttribute="bottom" constant="8" symbolic="YES" id="oCz-B6-1i5"/>
-                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
                 <outlet property="currentVolumeLabel" destination="TtW-eJ-zq3" id="oAm-F7-KZL"/>
                 <outlet property="goButton" destination="541" id="560"/>
-                <outlet property="graphView" destination="372" id="5nH-eb-m0w"/>
+                <outlet property="graphView" destination="yRa-kD-KK7" id="fhg-In-jAH"/>
                 <outlet property="stepper" destination="2mc-G2-Vh7" id="ifg-vD-DRf"/>
                 <outlet property="time" destination="546" id="559"/>
+                <outlet property="timeLeftLabel" destination="GPE-3q-uQK" id="Opu-8M-uEn"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>

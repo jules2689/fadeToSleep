@@ -10,6 +10,7 @@
 
 @interface GraphView : NSView
 
+- (void)setWidth:(CGFloat)width;
 - (void)addPoint:(CGPoint)point;
 - (void)clearPoints;
 

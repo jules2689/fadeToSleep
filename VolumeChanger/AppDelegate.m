@@ -47,6 +47,7 @@
     _ticks = 0;
     _timeInt = [_time.stringValue integerValue];
     _currentVolume = [ANSystemSoundWrapper systemVolume];
+	_timeLeftLabel.stringValue = [NSString stringWithFormat:@"Time Left: %lu mins", _timeInt];
 	
 	//The change will be equal to the current Volume divided by the number of times we get to decrease (# of ticks)
     _changeByVolume = _currentVolume / (_timeInt + 1);
@@ -55,7 +56,7 @@
     _expectedNextVolume = _currentVolume - _changeByVolume;
 	
 	//Timer goes off every minute
-    _timer = [NSTimer scheduledTimerWithTimeInterval:60.0f target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
 	
 	//Disable All Time Inputs, and set relevant UI info.
     [self disableTimeInput];
@@ -68,6 +69,7 @@
 	
 	//Width of ticks is equal to the width, divided by the number of ticks we get.
 	_widthOfTicks = roundf(_graphView.frame.size.width / _timeInt);
+	[_graphView setWidth:_widthOfTicks];
 }
 
 #pragma mark Timer Methods
@@ -102,6 +104,8 @@
 	[self setCurrentVolumeLabel];
 	_currentPoint = CGPointMake(_widthOfTicks * _ticks, roundf(_graphView.frame.size.height * _currentVolume));
 	[_graphView addPoint:_currentPoint];
+	
+	_timeLeftLabel.stringValue = _timeInt - _ticks != 1 ? [NSString stringWithFormat:@"Time Left: %lu mins", _timeInt - _ticks] : @"Time Left: 1 min";
 }
 
 #pragma mark - Control Methods

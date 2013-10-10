@@ -15,6 +15,7 @@
 @property (assign) IBOutlet GraphView *graphView;
 @property (assign) IBOutlet NSTextField *time;
 @property (assign) IBOutlet NSTextField *currentVolumeLabel;
+@property (assign) IBOutlet NSTextField *timeLeftLabel;
 @property (assign) IBOutlet NSButton *goButton;
 @property (assign) IBOutlet NSStepper *stepper;
 
