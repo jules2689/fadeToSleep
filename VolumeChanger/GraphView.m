@@ -45,6 +45,8 @@
 
 -(void)drawRect:(NSRect)dirtyRect
 {
+	[super drawRect:dirtyRect];
+	
 	//Border
 	CGPoint topLeft = CGPointMake(self.bounds.origin.x, self.bounds.size.height);
 	CGPoint topRight = CGPointMake(self.bounds.size.width, self.bounds.size.height);

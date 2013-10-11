@@ -37,6 +37,10 @@
 	_currentVolume = [ANSystemSoundWrapper systemVolume];
 	[self setCurrentVolumeLabel];
 	[self startVolumeWatcher];
+	
+	[_time setBackgroundColor:[NSColor clearColor]];
+	[_timeLeftLabel setBackgroundColor:[NSColor clearColor]];
+
 }
 
 #pragma mark - Button Actions
@@ -56,7 +60,7 @@
     _expectedNextVolume = _currentVolume - _changeByVolume;
 	
 	//Timer goes off every minute
-    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:60.0f target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
 	
 	//Disable All Time Inputs, and set relevant UI info.
     [self disableTimeInput];
@@ -131,6 +135,7 @@
 - (void)stepperDidChange:(id)sender
 {
 	[_time setStringValue:[NSString stringWithFormat:@"%lu", [_stepper integerValue]]];
+	[_time setBackgroundColor:[NSColor clearColor]];
 }
 
 -(void)controlTextDidChange:(NSNotification *)obj
@@ -158,6 +163,8 @@
 - (void)setCurrentVolumeLabel
 {
 	_currentVolumeLabel.stringValue = [NSString stringWithFormat:@"Current Volume: %@%%", [self floatToStringWithTwoDecimalPlaces:_currentVolume * 100]];
+	[_currentVolumeLabel setBackgroundColor:[NSColor clearColor]];
+	[_currentVolumeLabel setDrawsBackground:NO];
 }
 
 - (NSString *)floatToStringWithTwoDecimalPlaces:(CGFloat)value

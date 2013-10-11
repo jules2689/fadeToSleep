@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7352EE8B18065AB00047B42A /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7352EE8A18065AB00047B42A /* GraphView.m */; };
+		7352EE921806D5290047B42A /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7352EE911806D5290047B42A /* BackgroundView.m */; };
+		7352EE941806D5790047B42A /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = 7352EE931806D5790047B42A /* clouds.png */; };
+		7352EEC01807BB210047B42A /* Adium-Asleep-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7352EEBF1807BB210047B42A /* Adium-Asleep-icon.png */; };
+		7352EEC41807BB5A0047B42A /* Adium-Asleep-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7352EEC31807BB5A0047B42A /* Adium-Asleep-icon.png */; };
 		B91579B21805187F0057A58A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91579B11805187F0057A58A /* Cocoa.framework */; };
 		B91579BC1805187F0057A58A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B91579BA1805187F0057A58A /* InfoPlist.strings */; };
 		B91579BE1805187F0057A58A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B91579BD1805187F0057A58A /* main.m */; };
@@ -35,6 +39,11 @@
 /* Begin PBXFileReference section */
 		7352EE8918065AB00047B42A /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
 		7352EE8A18065AB00047B42A /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		7352EE901806D5290047B42A /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		7352EE911806D5290047B42A /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		7352EE931806D5790047B42A /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
+		7352EEBF1807BB210047B42A /* Adium-Asleep-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adium-Asleep-icon.png"; sourceTree = "<group>"; };
+		7352EEC31807BB5A0047B42A /* Adium-Asleep-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Adium-Asleep-icon.png"; path = "../../../../Desktop/Adium-Asleep-icon.png"; sourceTree = "<group>"; };
 		B91579AE1805187F0057A58A /* VolumeChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91579B11805187F0057A58A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B91579B41805187F0057A58A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -84,6 +93,7 @@
 		B91579A51805187F0057A58A = {
 			isa = PBXGroup;
 			children = (
+				7352EEBF1807BB210047B42A /* Adium-Asleep-icon.png */,
 				B91579E918051F9B0057A58A /* CoreAudio.framework */,
 				B91579B71805187F0057A58A /* VolumeChanger */,
 				B91579D41805187F0057A58A /* VolumeChangerTests */,
@@ -131,6 +141,8 @@
 				B91579B81805187F0057A58A /* Supporting Files */,
 				7352EE8918065AB00047B42A /* GraphView.h */,
 				7352EE8A18065AB00047B42A /* GraphView.m */,
+				7352EE901806D5290047B42A /* BackgroundView.h */,
+				7352EE911806D5290047B42A /* BackgroundView.m */,
 			);
 			path = VolumeChanger;
 			sourceTree = "<group>";
@@ -138,6 +150,8 @@
 		B91579B81805187F0057A58A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7352EEC31807BB5A0047B42A /* Adium-Asleep-icon.png */,
+				7352EE931806D5790047B42A /* clouds.png */,
 				B91579B91805187F0057A58A /* VolumeChanger-Info.plist */,
 				B91579BA1805187F0057A58A /* InfoPlist.strings */,
 				B91579BD1805187F0057A58A /* main.m */,
@@ -248,7 +262,10 @@
 			files = (
 				B91579BC1805187F0057A58A /* InfoPlist.strings in Resources */,
 				B91579C21805187F0057A58A /* Credits.rtf in Resources */,
+				7352EEC01807BB210047B42A /* Adium-Asleep-icon.png in Resources */,
 				B91579C81805187F0057A58A /* MainMenu.xib in Resources */,
+				7352EEC41807BB5A0047B42A /* Adium-Asleep-icon.png in Resources */,
+				7352EE941806D5790047B42A /* clouds.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7352EE921806D5290047B42A /* BackgroundView.m in Sources */,
 				B91579BE1805187F0057A58A /* main.m in Sources */,
 				B91579C51805187F0057A58A /* AppDelegate.m in Sources */,
 				B91579E8180518CB0057A58A /* ANSystemSoundWrapper.m in Sources */,
@@ -406,6 +424,7 @@
 		B91579E01805187F0057A58A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VolumeChanger/VolumeChanger-Prefix.pch";
@@ -418,6 +437,7 @@
 		B91579E11805187F0057A58A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VolumeChanger/VolumeChanger-Prefix.pch";
