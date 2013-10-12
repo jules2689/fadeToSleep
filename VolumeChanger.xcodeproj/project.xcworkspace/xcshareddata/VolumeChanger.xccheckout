@@ -12,6 +12,8 @@
 	<dict>
 		<key>963DDBCB-DFB2-45E3-B339-DDBB980FFD20</key>
 		<string>ssh://github.com/jules2689/fadeToSleep.git</string>
+		<key>BF99BB88-60A9-439C-AE7F-938AA18C840D</key>
+		<string>ssh://github.com/jules2689/INAppStoreWindow.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>VolumeChanger.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>963DDBCB-DFB2-45E3-B339-DDBB980FFD20</key>
 		<string>../..</string>
+		<key>BF99BB88-60A9-439C-AE7F-938AA18C840D</key>
+		<string>../../VolumeChanger/Libraries/INAppStoreWindow</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/jules2689/fadeToSleep.git</string>
@@ -35,6 +39,14 @@
 			<string>963DDBCB-DFB2-45E3-B339-DDBB980FFD20</string>
 			<key>IDESourceControlWCCName</key>
 			<string>fadeToSleep</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF99BB88-60A9-439C-AE7F-938AA18C840D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>INAppStoreWindow</string>
 		</dict>
 	</array>
 </dict>

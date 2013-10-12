@@ -10,8 +10,14 @@
 		7352EE8B18065AB00047B42A /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7352EE8A18065AB00047B42A /* GraphView.m */; };
 		7352EE921806D5290047B42A /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7352EE911806D5290047B42A /* BackgroundView.m */; };
 		7352EECF1807BDA50047B42A /* Adium-Asleep-icon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7352EECD1807BDA50047B42A /* Adium-Asleep-icon-1.png */; };
-		7352EED01807BDA50047B42A /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = 7352EECE1807BDA50047B42A /* clouds.png */; };
 		7352EED41807BDB70047B42A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7352EED31807BDB60047B42A /* Images.xcassets */; };
+		73E773451808AFEA00C0A2DC /* CBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E773441808AFEA00C0A2DC /* CBLabel.m */; };
+		73E773481808D1AE00C0A2DC /* NSView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E773471808D1AE00C0A2DC /* NSView+Additions.m */; };
+		73E7734B1808D29400C0A2DC /* night.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E773491808D29400C0A2DC /* night.png */; };
+		73E7734C1808D29400C0A2DC /* day.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E7734A1808D29400C0A2DC /* day.png */; };
+		73E7734E1808DCD600C0A2DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E7734D1808DCD600C0A2DC /* QuartzCore.framework */; };
+		73F4278C1808E8F3006AB0C1 /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F4278B1808E8F3006AB0C1 /* moon.png */; };
+		73F4278E1808F55F006AB0C1 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F4278D1808F55F006AB0C1 /* star.png */; };
 		B91579B21805187F0057A58A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91579B11805187F0057A58A /* Cocoa.framework */; };
 		B91579BC1805187F0057A58A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B91579BA1805187F0057A58A /* InfoPlist.strings */; };
 		B91579BE1805187F0057A58A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B91579BD1805187F0057A58A /* main.m */; };
@@ -42,8 +48,16 @@
 		7352EE901806D5290047B42A /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
 		7352EE911806D5290047B42A /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
 		7352EECD1807BDA50047B42A /* Adium-Asleep-icon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adium-Asleep-icon-1.png"; sourceTree = "<group>"; };
-		7352EECE1807BDA50047B42A /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		7352EED31807BDB60047B42A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		73E773431808AFEA00C0A2DC /* CBLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLabel.h; sourceTree = "<group>"; };
+		73E773441808AFEA00C0A2DC /* CBLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLabel.m; sourceTree = "<group>"; };
+		73E773461808D1AE00C0A2DC /* NSView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Additions.h"; sourceTree = "<group>"; };
+		73E773471808D1AE00C0A2DC /* NSView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Additions.m"; sourceTree = "<group>"; };
+		73E773491808D29400C0A2DC /* night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = night.png; path = ../../../../Desktop/sky/night.png; sourceTree = "<group>"; };
+		73E7734A1808D29400C0A2DC /* day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = day.png; path = ../../../../Desktop/sky/day.png; sourceTree = "<group>"; };
+		73E7734D1808DCD600C0A2DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		73F4278B1808E8F3006AB0C1 /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
+		73F4278D1808F55F006AB0C1 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		B91579AE1805187F0057A58A /* FadeToSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FadeToSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91579B11805187F0057A58A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B91579B41805187F0057A58A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -73,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E7734E1808DCD600C0A2DC /* QuartzCore.framework in Frameworks */,
 				B91579EA18051F9B0057A58A /* CoreAudio.framework in Frameworks */,
 				B91579B21805187F0057A58A /* Cocoa.framework in Frameworks */,
 			);
@@ -90,6 +105,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73F4278A1808E8E3006AB0C1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				73F4278D1808F55F006AB0C1 /* star.png */,
+				73F4278B1808E8F3006AB0C1 /* moon.png */,
+				73E773491808D29400C0A2DC /* night.png */,
+				73E7734A1808D29400C0A2DC /* day.png */,
+				7352EECD1807BDA50047B42A /* Adium-Asleep-icon-1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		B91579A51805187F0057A58A = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +140,7 @@
 		B91579B01805187F0057A58A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73E7734D1808DCD600C0A2DC /* QuartzCore.framework */,
 				B91579B11805187F0057A58A /* Cocoa.framework */,
 				B91579CF1805187F0057A58A /* SenTestingKit.framework */,
 				B91579B31805187F0057A58A /* Other Frameworks */,
@@ -143,6 +171,10 @@
 				7352EE901806D5290047B42A /* BackgroundView.h */,
 				7352EE911806D5290047B42A /* BackgroundView.m */,
 				7352EED31807BDB60047B42A /* Images.xcassets */,
+				73E773431808AFEA00C0A2DC /* CBLabel.h */,
+				73E773441808AFEA00C0A2DC /* CBLabel.m */,
+				73E773461808D1AE00C0A2DC /* NSView+Additions.h */,
+				73E773471808D1AE00C0A2DC /* NSView+Additions.m */,
 			);
 			path = VolumeChanger;
 			sourceTree = "<group>";
@@ -150,8 +182,7 @@
 		B91579B81805187F0057A58A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7352EECD1807BDA50047B42A /* Adium-Asleep-icon-1.png */,
-				7352EECE1807BDA50047B42A /* clouds.png */,
+				73F4278A1808E8E3006AB0C1 /* Images */,
 				B91579B91805187F0057A58A /* VolumeChanger-Info.plist */,
 				B91579BA1805187F0057A58A /* InfoPlist.strings */,
 				B91579BD1805187F0057A58A /* main.m */,
@@ -260,11 +291,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E7734C1808D29400C0A2DC /* day.png in Resources */,
 				B91579BC1805187F0057A58A /* InfoPlist.strings in Resources */,
+				73F4278E1808F55F006AB0C1 /* star.png in Resources */,
+				73E7734B1808D29400C0A2DC /* night.png in Resources */,
 				7352EECF1807BDA50047B42A /* Adium-Asleep-icon-1.png in Resources */,
+				73F4278C1808E8F3006AB0C1 /* moon.png in Resources */,
 				7352EED41807BDB70047B42A /* Images.xcassets in Resources */,
 				B91579C21805187F0057A58A /* Credits.rtf in Resources */,
-				7352EED01807BDA50047B42A /* clouds.png in Resources */,
 				B91579C81805187F0057A58A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,9 +334,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E773481808D1AE00C0A2DC /* NSView+Additions.m in Sources */,
 				7352EE921806D5290047B42A /* BackgroundView.m in Sources */,
 				B91579BE1805187F0057A58A /* main.m in Sources */,
 				B91579C51805187F0057A58A /* AppDelegate.m in Sources */,
+				73E773451808AFEA00C0A2DC /* CBLabel.m in Sources */,
 				B91579E8180518CB0057A58A /* ANSystemSoundWrapper.m in Sources */,
 				7352EE8B18065AB00047B42A /* GraphView.m in Sources */,
 			);

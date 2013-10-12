@@ -10,4 +10,6 @@
 
 @interface BackgroundView : NSView
 
+- (void)setNight;
+
 @end

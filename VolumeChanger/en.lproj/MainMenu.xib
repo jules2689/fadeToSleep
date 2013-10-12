@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
@@ -647,78 +647,122 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Fade To Sleep" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="371">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" unifiedTitleAndToolbar="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="300"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="fade_to_sleep" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <rect key="contentRect" x="335" y="390" width="372" height="567"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-            <view key="contentView" id="372" customClass="BackgroundView">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
-                <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="567"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="541">
-                        <rect key="frame" x="186" y="200" width="108" height="32"/>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfW-xp-7e7">
+                        <rect key="frame" x="-55" y="0.0" width="480" height="567"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="bevel" title="Fall Asleep" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="542">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="546">
-                        <rect key="frame" x="185" y="237" width="96" height="22"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="night" id="KF6-E0-k4m"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxX-kb-a85">
+                        <rect key="frame" x="-55" y="0.0" width="480" height="567"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" id="547">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="0" maximumFractionDigits="3" id="548">
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="day" id="osT-GC-R8d"/>
+                    </imageView>
+                    <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SDX-Vl-M21">
+                        <rect key="frame" x="20" y="459" width="80" height="80"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageAlignment="topLeft" imageScaling="proportionallyDown" image="moon" id="NTr-vT-tDt"/>
+                    </imageView>
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BJ-7p-YWv" customClass="CBLabel">
+                        <rect key="frame" x="111" y="394" width="151" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Time Left: 0 min" id="HWK-zj-RxY">
+                            <font key="font" size="13" name="Tahoma"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brD-Se-TqO">
+                        <rect key="frame" x="192" y="392" width="15" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <stepperCell key="cell" controlSize="small" continuous="YES" alignment="left" minValue="1" maxValue="1000" doubleValue="1" id="4IP-sL-C0m"/>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UcH-Zw-6ev">
+                        <rect key="frame" x="123" y="392" width="69" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="1 min" placeholderString="" bezelStyle="round" id="a5X-d6-7Z7">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="0" maximumFractionDigits="3" id="X7u-1D-AfU">
                                 <real key="roundingIncrement" value="0.0"/>
                                 <metadata>
                                     <bool key="localizesFormat" value="YES"/>
                                 </metadata>
                             </numberFormatter>
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <font key="font" size="13" name="LucidaGrande"/>
+                            <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSp-bN-b8m">
+                        <rect key="frame" x="206" y="394" width="43" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="recessed" title="GO" bezelStyle="recessed" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3Wn-mv-W3k">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" size="12" name="LucidaGrande-Bold"/>
+                        </buttonCell>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Xz-k7-G9g" customClass="CBLabel">
+                        <rect key="frame" x="92" y="362" width="188" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="100%" id="kcs-Pr-tu7">
+                            <font key="font" size="13" name="Tahoma"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gwg-eM-XSG" customClass="CBLabel">
+                        <rect key="frame" x="92" y="375" width="188" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="CURRENT VOLUME" id="PdH-A5-9hs">
+                            <font key="font" size="13" name="Tahoma"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2mc-G2-Vh7">
-                        <rect key="frame" x="279" y="234" width="19" height="27"/>
+                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQT-7S-9wg">
+                        <rect key="frame" x="133" y="337" width="106" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="1000" doubleValue="1" id="x3F-jY-nMV"/>
-                    </stepper>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-eJ-zq3">
-                        <rect key="frame" x="146" y="182" width="188" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Current Volume: 100%" id="1gs-zx-u2H">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPE-3q-uQK">
-                        <rect key="frame" x="146" y="157" width="188" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Time Left: 0 min" id="hSg-U1-jlT">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRa-kD-KK7" customClass="GraphView">
-                        <rect key="frame" x="159" y="48" width="163" height="96"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </customView>
+                        <buttonCell key="cell" type="inline" title="Reset" bezelStyle="inline" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N2W-xi-zFD">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="11" name="LucidaGrande-Bold"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="fxX-kb-a85" firstAttribute="top" secondItem="372" secondAttribute="top" id="48j-O1-UMb"/>
+                    <constraint firstItem="fxX-kb-a85" firstAttribute="top" secondItem="372" secondAttribute="top" id="chr-2y-PMs"/>
+                    <constraint firstAttribute="trailing" secondItem="fxX-kb-a85" secondAttribute="trailing" id="dW7-ep-q0C"/>
+                    <constraint firstItem="fxX-kb-a85" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="rko-LX-8rp"/>
+                    <constraint firstAttribute="bottom" secondItem="fxX-kb-a85" secondAttribute="bottom" id="vuT-6Y-0Qp"/>
+                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
-                <outlet property="currentVolumeLabel" destination="TtW-eJ-zq3" id="oAm-F7-KZL"/>
-                <outlet property="goButton" destination="541" id="560"/>
-                <outlet property="graphView" destination="yRa-kD-KK7" id="fhg-In-jAH"/>
-                <outlet property="stepper" destination="2mc-G2-Vh7" id="ifg-vD-DRf"/>
-                <outlet property="time" destination="546" id="559"/>
-                <outlet property="timeLeftLabel" destination="GPE-3q-uQK" id="Opu-8M-uEn"/>
+                <outlet property="currentVolumeLabel" destination="2Xz-k7-G9g" id="R7J-27-Brc"/>
+                <outlet property="dayView" destination="fxX-kb-a85" id="UaC-Cd-Iqd"/>
+                <outlet property="goButton" destination="cSp-bN-b8m" id="276-Hi-MZx"/>
+                <outlet property="mainView" destination="372" id="hfX-ai-2Qn"/>
+                <outlet property="moon" destination="SDX-Vl-M21" id="t5v-Qo-GG3"/>
+                <outlet property="resetButton" destination="jQT-7S-9wg" id="VbI-9E-sIr"/>
+                <outlet property="stepper" destination="brD-Se-TqO" id="4rE-yq-aWm"/>
+                <outlet property="time" destination="UcH-Zw-6ev" id="j1D-oM-4Ri"/>
+                <outlet property="timeLeftLabel" destination="9BJ-7p-YWv" id="YDG-In-bfe"/>
+                <outlet property="view" destination="372" id="X8V-jy-iAe"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
     </objects>
+    <resources>
+        <image name="day" width="277.2138671875" height="421.5810546875"/>
+        <image name="moon" width="193" height="208"/>
+        <image name="night" width="770" height="1171"/>
+    </resources>
 </document>

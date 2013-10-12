@@ -47,35 +47,6 @@
 {
 	[super drawRect:dirtyRect];
 	
-	//Border
-	CGPoint topLeft = CGPointMake(self.bounds.origin.x, self.bounds.size.height);
-	CGPoint topRight = CGPointMake(self.bounds.size.width, self.bounds.size.height);
-	CGPoint bottomLeft = CGPointMake(self.bounds.origin.x, self.bounds.origin.y);
-	CGPoint bottomRight = CGPointMake(self.bounds.size.width, self.bounds.origin.y);
-	
-	NSBezierPath *border = [NSBezierPath bezierPath];
-	[border moveToPoint:topLeft];
-	[border lineToPoint:topRight];
-	[border lineToPoint:bottomRight];
-	[border lineToPoint:bottomLeft];
-	[border lineToPoint:topLeft];
-	[border setLineWidth:1.0f];
-	[[NSColor gridColor] set];
-	[border stroke];
-	
-	//Graph Lines
-	NSUInteger numberOfTicks = self.frame.size.width / _widthOfXPoints + 1;
-	for (NSUInteger idx = 0; idx < numberOfTicks; idx++) {
-		CGPoint top = CGPointMake(roundf(_widthOfXPoints * idx), self.bounds.size.height);
-		CGPoint bottom = CGPointMake(roundf(_widthOfXPoints * idx), self.bounds.origin.y);
-		NSBezierPath *line = [NSBezierPath bezierPath];
-		[line moveToPoint:top];
-		[line lineToPoint:bottom];
-		[line setLineWidth:1.0f];
-		[[NSColor gridColor] set];
-		[line stroke];
-	}
-	
 	//Graph Points
 	CGPoint point1;
 	CGPoint point2;
@@ -86,7 +57,7 @@
 			[line moveToPoint:point1];
 			[line lineToPoint:point2];
 			[line setLineWidth:2.0f];
-			[[NSColor blackColor] set];
+			[lineColor set];
 			[line stroke];
 			point1 = point2;
 		} else {

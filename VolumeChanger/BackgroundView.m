@@ -8,12 +8,25 @@
 
 #import "BackgroundView.h"
 
-@implementation BackgroundView
+@implementation BackgroundView {
+	NSString *_pictureName;
+}
+
+-(void)awakeFromNib
+{
+	_pictureName = @"day.png";
+}
+
+- (void)setNight
+{
+	_pictureName = @"night.png";
+	[self setNeedsDisplay:YES];
+}
 
 - (void)drawRect:(NSRect)dirtyRect
 {
 	[super drawRect:dirtyRect];
-	NSImage *image = [NSImage imageNamed:@"clouds.png"];
+	NSImage *image = [NSImage imageNamed:_pictureName];
 	CGFloat ratio = dirtyRect.size.width / image.size.width;
 	[image setSize:CGSizeMake(dirtyRect.size.width, image.size.height * ratio)];
 	[image drawAtPoint:NSZeroPoint fromRect:dirtyRect operation:NSCompositeSourceOver fraction:1];

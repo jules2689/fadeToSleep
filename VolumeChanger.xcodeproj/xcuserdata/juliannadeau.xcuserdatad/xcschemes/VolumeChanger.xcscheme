@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B91579AD1805187F0057A58A"
-               BuildableName = "VolumeChanger.app"
+               BuildableName = "FadeToSleep.app"
                BlueprintName = "VolumeChanger"
                ReferencedContainer = "container:VolumeChanger.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B91579AD1805187F0057A58A"
-            BuildableName = "VolumeChanger.app"
+            BuildableName = "FadeToSleep.app"
             BlueprintName = "VolumeChanger"
             ReferencedContainer = "container:VolumeChanger.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B91579AD1805187F0057A58A"
-            BuildableName = "VolumeChanger.app"
+            BuildableName = "FadeToSleep.app"
             BlueprintName = "VolumeChanger"
             ReferencedContainer = "container:VolumeChanger.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B91579AD1805187F0057A58A"
-            BuildableName = "VolumeChanger.app"
+            BuildableName = "FadeToSleep.app"
             BlueprintName = "VolumeChanger"
             ReferencedContainer = "container:VolumeChanger.xcodeproj">
          </BuildableReference>
